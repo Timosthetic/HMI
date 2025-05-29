@@ -37,10 +37,10 @@ namespace HMI
         };
         [ObservableProperty] private ObservableCollection<string> _upLine = new ObservableCollection<string>();
         [ObservableProperty] private ObservableCollection<string> _downLine = new();
-        [ObservableProperty] private string _m01;
-        [ObservableProperty] private string _m02;
-        [ObservableProperty] private string _m03;
-        [ObservableProperty] private string _m04;
+        [ObservableProperty] private string? _m01;
+        [ObservableProperty] private string? _m02;
+        [ObservableProperty] private string? _m03;
+        [ObservableProperty] private string? _m04;
         private int currentIndex = 0; // 用于循环覆盖 M01~M04
 
         void Next()
